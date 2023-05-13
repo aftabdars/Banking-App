@@ -34,8 +34,9 @@ namespace AtmManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Controls.Clear();
-            this.Controls.Add(new PhoneSettings());
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new ChangePhone());
+            dw.Show();
         }
     }
 }
