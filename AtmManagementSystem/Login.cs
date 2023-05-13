@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,30 @@ namespace AtmManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String password = "";
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\Database1.mdf;Integrated Security=True");
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(
+                    "select Password from [dbo].[Accounts.tb]" +
+                    "where Username = '" + textBox2.Text + "'"
+                    , conn);
+                password = (String)cmd.ExecuteScalar();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            
+            if(password != textBox1.Text)
+            {
+                MessageBox.Show("Password Incorrect!");
+                return;
+            }
+
             this.Hide();
             new Dashboard().Show();
         }
@@ -93,6 +118,11 @@ namespace AtmManagementSystem
             this.Hide();
             Accounts signup = new Accounts();
             signup.Show();
+        }
+
+        private void Login_Load_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

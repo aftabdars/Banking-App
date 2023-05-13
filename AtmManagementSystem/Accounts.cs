@@ -209,5 +209,38 @@ namespace AtmManagementSystem
             Login login = new Login();
             login.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\Database1.mdf;Integrated Security=True");
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("insert into [dbo].[Accounts.tb] " +
+                    "(Id, Name, FName, Address, Phone, Username, Password, Occupation) " +
+                    "values " +
+                    "(@accnum, @name, @fname, @add, @phone, @user, @pwd, @occ)", conn);
+                cmd.Parameters.AddWithValue("@accnum", AccNumtb.Text);
+                cmd.Parameters.AddWithValue("@name", AccNametb.Text);
+                cmd.Parameters.AddWithValue("@fname", Fnametb.Text);
+                cmd.Parameters.AddWithValue("@add", Addresstb.Text);
+                cmd.Parameters.AddWithValue("@phone", Phonetb.Text);
+                cmd.Parameters.AddWithValue("@user", Usernametb.Text);
+                cmd.Parameters.AddWithValue("@pwd", Passwordtb.Text);
+                cmd.Parameters.AddWithValue("@occ", Occupationtb.Text);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            MessageBox.Show("Account Successfully Created");
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+
+        }
     }
 }
