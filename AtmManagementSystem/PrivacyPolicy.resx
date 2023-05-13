@@ -1,0 +1,117 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>
+
+Privacy Policy for Banking App
+
+At our banking app, we are committed to protecting your privacy and security. This Privacy Policy explains how we collect, use, and disclose your personal information when you use our app.
+
+Collection of Personal Information
+
+We may collect the following personal information from you when you use our banking app:
+
+- Contact information, such as your name, email address, phone number, and mailing address.
+- Financial information, such as your bank account number, credit card number, and transaction history.
+- Identification information, such as your Social Security number or other government-issued ID.
+- Location information, such as your device's GPS location.
+
+We may collect this information when you register for our app, when you use our services, when you interact with our customer service, or when you participate in surveys or promotions.
+
+Use of Personal Information
+
+We may use your personal information for the following purposes:
+
+- To provide you with our banking services.
+- To process your transactions.
+- To communicate with you about our services, promotions, and updates.
+- To comply with our legal obligations.
+- To detect and prevent fraud.
+- To improve our app and services.
+
+Disclosure of Personal Information
+
+We may disclose your personal information to the following parties:
+
+- Our affiliates and subsidiaries.
+- Our service providers who assist us with our app and services.
+- Law enforcement and regulatory agencies, as required by law.
+
+We do not sell or rent your personal information to third parties.
+
+Security of Personal Information
+
+We use reasonable and appropriate measures to protect your personal information from unauthorized access, disclosure, and use. We also require our service providers to implement appropriate security measures.
+
+Retention of Personal Information
+
+We retain your personal information for as long as necessary to fulfill the purposes for which it was collected, or as required by law.
+
+Changes to Privacy Policy
+
+We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the updated Privacy Policy on our app or by other means.
+
+Contact Us
+
+If you have any questions or concerns about this Privacy Policy, please contact us at [insert contact information].
+
+Effective Date: [insert date]</value>
+  </data>
+</root>

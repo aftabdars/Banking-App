@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AboutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AboutUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AccountSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Actions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AddCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BillPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ChangeEmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ContactUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MobileTopUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PasswordSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PhoneSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PrivacyPolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SendMoney.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="SettingsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
