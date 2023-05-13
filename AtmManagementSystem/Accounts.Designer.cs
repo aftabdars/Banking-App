@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accounts));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,9 +40,9 @@
             this.Fnametb = new System.Windows.Forms.TextBox();
             this.AccNametb = new System.Windows.Forms.TextBox();
             this.AccNumtb = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Passwordtb = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -179,17 +180,6 @@
             this.AccNumtb.Enter += new System.EventHandler(this.AccNumtb_Enter);
             this.AccNumtb.Leave += new System.EventHandler(this.AccNumtb_Leave);
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(514, 389);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 21);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "Login";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
@@ -210,6 +200,23 @@
             this.Passwordtb.Enter += new System.EventHandler(this.Passwordtb_Enter);
             this.Passwordtb.Leave += new System.EventHandler(this.Passwordtb_Leave);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(437, 392);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(207, 32);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Login";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Accounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -218,7 +225,6 @@
             this.ClientSize = new System.Drawing.Size(800, 463);
             this.Controls.Add(this.Passwordtb);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.AccNumtb);
             this.Controls.Add(this.AccNametb);
             this.Controls.Add(this.Fnametb);
@@ -226,9 +232,11 @@
             this.Controls.Add(this.Phonetb);
             this.Controls.Add(this.Usernametb);
             this.Controls.Add(this.Occupationtb);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Accounts";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Accounts";
@@ -252,9 +260,9 @@
         private TextBox Fnametb;
         private TextBox AccNametb;
         private TextBox AccNumtb;
-        private Label label14;
         private Panel panel2;
         private Button button2;
         private TextBox Passwordtb;
+        private Button button3;
     }
 }

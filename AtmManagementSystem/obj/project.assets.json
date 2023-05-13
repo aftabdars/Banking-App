@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\AtmManagementSystem\\AtmManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\Git\\Banking-App\\AtmManagementSystem\\AtmManagementSystem.csproj",
       "projectName": "AtmManagementSystem",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\AtmManagementSystem\\AtmManagementSystem.csproj",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\Git\\Banking-App\\AtmManagementSystem\\AtmManagementSystem.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\AtmManagementSystem\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\source\\repos\\Git\\Banking-App\\AtmManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

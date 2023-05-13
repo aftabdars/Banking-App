@@ -202,5 +202,12 @@ namespace AtmManagementSystem
                 Occupationtb.Text = "Enter your Occupation";
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

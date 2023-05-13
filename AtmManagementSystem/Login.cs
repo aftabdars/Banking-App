@@ -87,5 +87,12 @@ namespace AtmManagementSystem
                 textBox1.PasswordChar = '\0';
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Accounts signup = new Accounts();
+            signup.Show();
+        }
     }
 }
