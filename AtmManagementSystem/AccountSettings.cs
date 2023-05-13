@@ -28,8 +28,9 @@ namespace AtmManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Controls.Clear();
-            this.Controls.Add(new PasswordSettings());
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new ChangePassword());
+            dw.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

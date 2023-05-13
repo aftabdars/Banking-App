@@ -97,8 +97,6 @@ C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debu
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.Home.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.Login.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.MobileTopUp.resources
-C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.PasswordSettings.resources
-C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.PhoneSettings.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.PrivacyPolicy.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.Properties.Resources.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.SendMoney.resources
@@ -116,3 +114,4 @@ C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debu
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.pdb
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.ChangePhone.resources
+C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.ChangePassword.resources

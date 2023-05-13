@@ -1,6 +1,6 @@
 ﻿namespace AtmManagementSystem
 {
-    partial class ChangePhone
+    partial class ChangePassword
     {
         /// <summary> 
         /// Required designer variable.
@@ -87,7 +87,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(200, 23);
             this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "New Phone";
+            this.textBox4.Text = "New Password";
             this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
             this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
@@ -97,7 +97,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(200, 23);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Previous Phone";
+            this.textBox2.Text = "Previous Password";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
@@ -130,16 +130,16 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(447, 65);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Phone Settings";
+            this.label1.Text = "Password Settings";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ChangePhone
+            // ChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.settingsPanel);
             this.Controls.Add(this.panel1);
-            this.Name = "ChangePhone";
+            this.Name = "ChangePassword";
             this.Size = new System.Drawing.Size(447, 460);
             this.settingsPanel.ResumeLayout(false);
             this.settingsPanel.PerformLayout();

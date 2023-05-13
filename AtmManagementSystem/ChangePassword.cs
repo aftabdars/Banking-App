@@ -1,8 +1,8 @@
 ﻿namespace AtmManagementSystem
 {
-    public partial class ChangePhone : UserControl
+    public partial class ChangePassword : UserControl
     {
-        public ChangePhone()
+        public ChangePassword()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Previous Phone")
+            if (textBox2.Text == "Previous Password")
             {
                 textBox2.Text = "";
             }
@@ -35,13 +35,13 @@
         {
             if (textBox2.Text == "")
             {
-                textBox2.Text = "Previous Phone";
+                textBox2.Text = "Previous Password";
             }
         }
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
-            if (textBox4.Text == "New Phone")
+            if (textBox4.Text == "New Password")
             {
                 textBox4.Text = "";
             }
@@ -51,7 +51,7 @@
         {
             if (textBox4.Text == "")
             {
-                textBox4.Text = "New Phone";
+                textBox4.Text = "New Password";
             }
         }
 

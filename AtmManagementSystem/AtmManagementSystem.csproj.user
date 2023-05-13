@@ -43,12 +43,6 @@
     <Compile Update="MobileTopUp.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="PasswordSettings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="PhoneSettings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="PrivacyPolicy.cs">
       <SubType>UserControl</SubType>
     </Compile>
