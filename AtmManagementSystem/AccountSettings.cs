@@ -19,8 +19,11 @@ namespace AtmManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Controls.Clear();
-            this.Controls.Add(new ChangeEmail());
+            //this.Controls.Clear();
+            //this.Controls.Add(new ChangeEmail());
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new ChangeEmail());
+            dw.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
