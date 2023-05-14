@@ -33,6 +33,9 @@ namespace AtmManagementSystem
         {
             lblTime.Text = DateTime.Now.ToString("dd/MM/yyyy");
             label3.Text = Properties.Settings.Default.currentUser;
+            cardsContainer.Controls.Add(new VisaCard());
+            cardsContainer.Controls.Add(new VisaCard());
+            cardsContainer.Controls.Add(new VisaCard());
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -61,6 +64,11 @@ namespace AtmManagementSystem
             DialogWindow dw = new DialogWindow();
             dw.Controls.Add(new AddCard());
             dw.Show();
+        }
+
+        private void cardsContainer_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

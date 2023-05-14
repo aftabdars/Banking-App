@@ -58,5 +58,8 @@
     <Compile Update="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="VisaCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
