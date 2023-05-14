@@ -14,9 +14,11 @@ namespace AtmManagementSystem
     public partial class Dashboard : Form
     {
         private bool sidebarExpanded = false;
+        //private string currentUser = "";
         public Dashboard()
         {
             InitializeComponent();
+            //currentUser = getUser;
         }
 
         private void Dashboard_Load(object sender, EventArgs e)

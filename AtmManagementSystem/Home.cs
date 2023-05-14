@@ -12,9 +12,11 @@ namespace AtmManagementSystem
 {
     public partial class Home : UserControl
     {
+        //private string currentUser;
         public Home()
         {
             InitializeComponent();
+            //currentUser = getUser;
         }
 
         private void lblTime_Click(object sender, EventArgs e)
@@ -30,6 +32,7 @@ namespace AtmManagementSystem
         private void Home_Load(object sender, EventArgs e)
         {
             lblTime.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            label3.Text = Properties.Settings.Default.currentUser;
         }
 
         private void button2_Click(object sender, EventArgs e)

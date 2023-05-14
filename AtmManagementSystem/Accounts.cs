@@ -214,7 +214,7 @@ namespace AtmManagementSystem
         {
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\Database1.mdf;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+ Properties.Settings.Default.databasePath + ";Integrated Security=True");
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("insert into [dbo].[Accounts.tb] " +
                     "(Id, Name, FName, Address, Phone, Username, Password, Occupation) " +

@@ -54,7 +54,7 @@ namespace AtmManagementSystem
             String password = "";
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\Database1.mdf;Integrated Security=True");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Properties.Settings.Default.databasePath + ";Integrated Security=True");
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(
                     "select Password from [dbo].[Accounts.tb]" +
@@ -75,6 +75,7 @@ namespace AtmManagementSystem
                 return;
             }
 
+            Properties.Settings.Default.currentUser = textBox2.Text;
             this.Hide();
             new Dashboard().Show();
         }
