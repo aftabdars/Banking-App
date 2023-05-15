@@ -181,12 +181,13 @@
             // 
             this.AccNumtb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AccNumtb.Location = new System.Drawing.Point(184, 98);
-            this.AccNumtb.MaxLength = 50;
+            this.AccNumtb.MaxLength = 13;
             this.AccNumtb.Name = "AccNumtb";
             this.AccNumtb.Size = new System.Drawing.Size(165, 23);
             this.AccNumtb.TabIndex = 0;
             this.AccNumtb.Text = "National ID card number";
             this.AccNumtb.Enter += new System.EventHandler(this.AccNumtb_Enter);
+            this.AccNumtb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AccNumtb_KeyPress);
             this.AccNumtb.Leave += new System.EventHandler(this.AccNumtb_Leave);
             // 
             // panel2

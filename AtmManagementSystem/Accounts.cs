@@ -246,17 +246,32 @@ namespace AtmManagementSystem
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (Usernametb.Text == "Enter your email")
+            if (emailtb.Text == "Enter your email")
             {
-                Usernametb.Text = "";
+                emailtb.Text = "";
             }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (Usernametb.Text == "")
+            if (emailtb.Text == "")
             {
-                Usernametb.Text = "Enter your email";
+                emailtb.Text = "Enter your email";
+            }
+        }
+
+        private void AccNumtb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }
