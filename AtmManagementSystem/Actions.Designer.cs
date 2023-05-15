@@ -100,15 +100,16 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::AtmManagementSystem.Properties.Resources.bank_120px1;
+            this.button4.Image = global::AtmManagementSystem.Properties.Resources.request_money_120px;
             this.button4.Location = new System.Drawing.Point(3, 236);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(268, 227);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Send Money";
+            this.button4.Text = "Add Money";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 

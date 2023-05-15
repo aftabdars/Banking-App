@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="AddMoney.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ChangePassword.cs">
       <SubType>UserControl</SubType>
     </Compile>

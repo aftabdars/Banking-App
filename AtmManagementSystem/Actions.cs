@@ -37,5 +37,12 @@ namespace AtmManagementSystem
             dw.Controls.Add(new BillPayment());
             dw.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new AddMoney());
+            dw.Show();
+        }
     }
 }

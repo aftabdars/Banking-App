@@ -183,6 +183,26 @@ namespace AtmManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap request_money_120px {
+            get {
+                object obj = ResourceManager.GetObject("request_money_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap request_money_24px {
+            get {
+                object obj = ResourceManager.GetObject("request_money_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap settings_24px {
             get {
                 object obj = ResourceManager.GetObject("settings_24px", resourceCulture);

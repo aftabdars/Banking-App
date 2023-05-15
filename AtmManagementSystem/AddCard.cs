@@ -25,7 +25,7 @@ namespace AtmManagementSystem
             DataTable dataTable = new();
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Properties.Settings.Default.databasePath + ";Integrated Security=True");
+                SqlConnection conn = new SqlConnection (Properties.Settings.Default.databasePath);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("insert into [dbo].[Cards] " +
                     "(Name, CardNumber, Expiry, CVV, Username) " +

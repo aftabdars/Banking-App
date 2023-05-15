@@ -47,7 +47,6 @@
             this.lblIncome = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.lblCardNumber = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
@@ -208,7 +207,6 @@
             this.panel4.Controls.Add(this.lblIncome);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.lblCardNumber);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.lblBalance);
             this.panel4.Controls.Add(this.lblTime);
@@ -271,17 +269,6 @@
             this.label12.Size = new System.Drawing.Size(61, 21);
             this.label12.TabIndex = 6;
             this.label12.Text = "Income";
-            // 
-            // lblCardNumber
-            // 
-            this.lblCardNumber.AutoSize = true;
-            this.lblCardNumber.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCardNumber.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblCardNumber.Location = new System.Drawing.Point(3, 135);
-            this.lblCardNumber.Name = "lblCardNumber";
-            this.lblCardNumber.Size = new System.Drawing.Size(125, 19);
-            this.lblCardNumber.TabIndex = 5;
-            this.lblCardNumber.Text = "**** **** **** 1234";
             // 
             // label10
             // 
@@ -349,7 +336,6 @@
         private FlowLayoutPanel cardsContainer;
         private Button button1;
         private Label lblTime;
-        private Label lblCardNumber;
         private Label label10;
         private Label lblBalance;
         private Label lblExpense;

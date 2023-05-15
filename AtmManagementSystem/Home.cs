@@ -71,6 +71,7 @@ namespace AtmManagementSystem
             label3.Text = Properties.Settings.Default.currentUser;
             DataTable cards = getCards();
             drawCards(cards);
+            //edit balance, transaction, expense, income
         }
 
         private void button2_Click(object sender, EventArgs e)
