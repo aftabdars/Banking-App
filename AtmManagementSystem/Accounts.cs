@@ -214,15 +214,16 @@ namespace AtmManagementSystem
         {
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+ Properties.Settings.Default.databasePath + ";Integrated Security=True");
+                SqlConnection conn = new SqlConnection(Properties.Settings.Default.databasePath);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("insert into [dbo].[Accounts.tb] " +
-                    "(Id, Name, FName, Address, Phone, Username, Password, Occupation) " +
+                    "(Id, Name, FName, email, Address, Phone, Username, Password, Occupation) " +
                     "values " +
-                    "(@accnum, @name, @fname, @add, @phone, @user, @pwd, @occ)", conn);
+                    "(@accnum, @name, @fname, @email, @add, @phone, @user, @pwd, @occ)", conn);
                 cmd.Parameters.AddWithValue("@accnum", AccNumtb.Text);
                 cmd.Parameters.AddWithValue("@name", AccNametb.Text);
                 cmd.Parameters.AddWithValue("@fname", Fnametb.Text);
+                cmd.Parameters.AddWithValue("@email", emailtb.Text);
                 cmd.Parameters.AddWithValue("@add", Addresstb.Text);
                 cmd.Parameters.AddWithValue("@phone", Phonetb.Text);
                 cmd.Parameters.AddWithValue("@user", Usernametb.Text);
@@ -241,6 +242,22 @@ namespace AtmManagementSystem
             Login login = new Login();
             login.Show();
 
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (Usernametb.Text == "Enter your email")
+            {
+                Usernametb.Text = "";
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (Usernametb.Text == "")
+            {
+                Usernametb.Text = "Enter your email";
+            }
         }
     }
 }

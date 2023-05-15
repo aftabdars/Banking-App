@@ -37,8 +37,9 @@ namespace AtmManagementSystem.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Administrator\\source\\repos\\Git\\Banking-App\\AtmManagementSystem\\Database1" +
-            ".mdf")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\source" +
+            "\\repos\\Git\\Banking-App\\AtmManagementSystem\\Database1.mdf;Integrated Security=Tru" +
+            "e")]
         public string databasePath {
             get {
                 return ((string)(this["databasePath"]));

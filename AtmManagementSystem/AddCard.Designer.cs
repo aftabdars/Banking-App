@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,10 +55,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox5);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -66,6 +66,14 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(500, 283);
             this.panel2.TabIndex = 3;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(170, 98);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(157, 23);
+            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button2
             // 
@@ -98,6 +106,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(170, 127);
+            this.textBox4.MaxLength = 30;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(156, 23);
             this.textBox4.TabIndex = 1;
@@ -105,19 +114,10 @@
             this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
             this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(170, 98);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(156, 23);
-            this.textBox5.TabIndex = 1;
-            this.textBox5.Text = "Expiry Date eg. 02/2022";
-            this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter);
-            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(170, 71);
+            this.textBox2.MaxLength = 3;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(156, 23);
             this.textBox2.TabIndex = 1;
@@ -128,11 +128,13 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(170, 42);
+            this.textBox1.MaxLength = 16;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 23);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Enter your Card Number";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter_1);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel1
@@ -167,9 +169,9 @@
         private Button button2;
         private Button button1;
         private TextBox textBox4;
-        private TextBox textBox5;
         private TextBox textBox2;
         private TextBox textBox1;
         private Panel panel1;
+        private DateTimePicker dateTimePicker1;
     }
 }

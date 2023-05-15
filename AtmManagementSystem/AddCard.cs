@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,10 +16,36 @@ namespace AtmManagementSystem
         public AddCard()
         {
             InitializeComponent();
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "MM/yyyy";
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DataTable dataTable = new();
+            try
+            {
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Properties.Settings.Default.databasePath + ";Integrated Security=True");
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("insert into [dbo].[Cards] " +
+                    "(Name, CardNumber, Expiry, CVV, Username) " +
+                    "values " +
+                    "(@name, @number, @expiry, @cvv, @user)", conn);
+                cmd.Parameters.AddWithValue("@name", textBox4.Text);
+                cmd.Parameters.AddWithValue("@number", textBox1.Text);
+                cmd.Parameters.AddWithValue("@expiry", dateTimePicker1.Value);
+                cmd.Parameters.AddWithValue("@cvv", textBox2.Text);
+                cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            MessageBox.Show("Card Successfully added");
+
             this.Parent.Hide();
         }
 
@@ -69,7 +96,7 @@ namespace AtmManagementSystem
             }
         }
 
-        private void textBox5_Enter(object sender, EventArgs e)
+        /*private void textBox5_Enter(object sender, EventArgs e)
         {
             if (textBox5.Text == "Expiry Date eg. 02/2022")
             {
@@ -83,7 +110,7 @@ namespace AtmManagementSystem
             {
                 textBox5.Text = "Expiry Date eg. 02/2022";
             }
-        }
+        }*/
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
@@ -98,6 +125,26 @@ namespace AtmManagementSystem
             if (textBox4.Text == "")
             {
                 textBox4.Text = "Enter the name on card";
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }

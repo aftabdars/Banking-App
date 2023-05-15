@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,41 @@ namespace AtmManagementSystem
             //currentUser = getUser;
         }
 
+        private void drawCards(DataTable cards)
+        {
+            foreach (DataRow row in cards.Rows)
+            {
+                //generate card component
+                VisaCard card = new();
+                card.lblName.Text = row["Name"].ToString();
+                string cardNumber = System.Text.RegularExpressions.Regex.Replace(row["CardNumber"].ToString(), ".{4}", "$0 ");
+                card.lblNumber.Text = cardNumber;
+                DateTime expiryDate = (DateTime)row["Expiry"];
+                card.lblExpiry.Text = expiryDate.ToString("MM/yyyy");
+                card.lblCVV.Text = row["CVV"].ToString();
+                cardsContainer.Controls.Add(card);
+            }
+        }
+
+        private DataTable getCards()
+        {
+            DataTable dataTable = new();
+            string connString = Properties.Settings.Default.databasePath;
+            string query = "select * from [dbo].[Cards] where Username = '" + Properties.Settings.Default.currentUser + "'";
+
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+
+            // create data adapter
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            // this will query your database and return the result to your datatable
+            da.Fill(dataTable);
+            conn.Close();
+            da.Dispose();
+            return dataTable;
+        }
+
         private void lblTime_Click(object sender, EventArgs e)
         {
 
@@ -33,9 +69,8 @@ namespace AtmManagementSystem
         {
             lblTime.Text = DateTime.Now.ToString("dd/MM/yyyy");
             label3.Text = Properties.Settings.Default.currentUser;
-            cardsContainer.Controls.Add(new VisaCard());
-            cardsContainer.Controls.Add(new VisaCard());
-            cardsContainer.Controls.Add(new VisaCard());
+            DataTable cards = getCards();
+            drawCards(cards);
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -6,7 +6,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="databasePath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\Database1.mdf</Value>
+      <Value Profile="(Default)">Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\Database1.mdf;Integrated Security=True</Value>
     </Setting>
     <Setting Name="Setting" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

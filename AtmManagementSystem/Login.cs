@@ -54,7 +54,7 @@ namespace AtmManagementSystem
             String password = "";
             try
             {
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Properties.Settings.Default.databasePath + ";Integrated Security=True");
+                SqlConnection conn = new SqlConnection(Properties.Settings.Default.databasePath);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand(
                     "select Password from [dbo].[Accounts.tb]" +

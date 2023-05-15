@@ -43,6 +43,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.Passwordtb = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.emailtb = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,11 +143,11 @@
             // Addresstb
             // 
             this.Addresstb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Addresstb.Location = new System.Drawing.Point(184, 290);
+            this.Addresstb.Location = new System.Drawing.Point(184, 354);
             this.Addresstb.MaxLength = 150;
             this.Addresstb.Multiline = true;
             this.Addresstb.Name = "Addresstb";
-            this.Addresstb.Size = new System.Drawing.Size(165, 142);
+            this.Addresstb.Size = new System.Drawing.Size(165, 78);
             this.Addresstb.TabIndex = 3;
             this.Addresstb.Text = "Enter your Address";
             this.Addresstb.Enter += new System.EventHandler(this.Addresstb_Enter);
@@ -226,12 +227,25 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // emailtb
+            // 
+            this.emailtb.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.emailtb.Location = new System.Drawing.Point(184, 290);
+            this.emailtb.MaxLength = 50;
+            this.emailtb.Name = "emailtb";
+            this.emailtb.Size = new System.Drawing.Size(165, 23);
+            this.emailtb.TabIndex = 28;
+            this.emailtb.Text = "Enter your email";
+            this.emailtb.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.emailtb.Leave += new System.EventHandler(this.textBox1_Leave);
+            // 
             // Accounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(800, 463);
+            this.Controls.Add(this.emailtb);
             this.Controls.Add(this.Passwordtb);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.AccNumtb);
@@ -273,5 +287,6 @@
         private Button button2;
         private TextBox Passwordtb;
         private Button button3;
+        private TextBox emailtb;
     }
 }
