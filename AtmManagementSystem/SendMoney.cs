@@ -93,7 +93,7 @@ namespace AtmManagementSystem
                 MessageBox.Show(ex.Message);
                 return;
             }
-            MessageBox.Show("Money Successfully Added");
+            MessageBox.Show("Money Successfully Sent");
 
             this.Parent.Hide();
         }
