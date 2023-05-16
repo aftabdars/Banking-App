@@ -13,6 +13,58 @@ namespace AtmManagementSystem
 {
     public partial class Home : UserControl
     {
+        private void setTotals(DataTable dt)
+        {
+            var sumIncome = dt.AsEnumerable()
+                //.Where(x => x.Field<String>("Type") == "incoming")
+                .Where(x => x.Field<String>("Type").Trim() == "incoming")
+                .Sum(x => x.Field<int>("Amount"))
+                .ToString(); // 30
+
+            var sumExpense = dt.AsEnumerable()
+                .Where(x => x.Field<String>("Type").Trim() == "outgoing")
+                .Sum(x => x.Field<int>("Amount"))
+                .ToString(); // 30
+
+            lblIncome.Text = sumIncome;
+            lblExpense.Text = sumExpense;
+
+            //account balance
+            string connString = AtmManagementSystem.Properties.Settings.Default.databasePath;
+            string query = "select balance from [dbo].[Accounts.tb] where Username = '" + AtmManagementSystem.Properties.Settings.Default.currentUser + "'";
+
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+
+            Int32 balance = (Int32)cmd.ExecuteScalar();
+            lblBalance.Text = balance.ToString();
+
+            return;
+        }
+
+        private DataTable getTransactions()
+        {
+            DataTable dataTable = new();
+            string connString = AtmManagementSystem.Properties.Settings.Default.databasePath;
+            string query = "select * from [dbo].[Transactions] where Username = '" + AtmManagementSystem.Properties.Settings.Default.currentUser + "'";
+
+            SqlConnection conn = new SqlConnection(connString);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+
+            // create data adapter
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            // this will query your database and return the result to your datatable
+            da.Fill(dataTable);
+            conn.Close();
+            da.Dispose();
+
+            dataGridView1.DataSource = dataTable;
+
+            return dataTable;
+        }
+
         //private string currentUser;
         public Home()
         {
@@ -71,6 +123,8 @@ namespace AtmManagementSystem
             label3.Text = Properties.Settings.Default.currentUser;
             DataTable cards = getCards();
             drawCards(cards);
+            DataTable dt = getTransactions();
+            setTotals(dt);
             //edit balance, transaction, expense, income
         }
 

@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.panel7 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.transactionDate = new System.Windows.Forms.Label();
-            this.transactionAmount = new System.Windows.Forms.Label();
-            this.transactionName = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label16 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.cardsContainer = new System.Windows.Forms.FlowLayoutPanel();
@@ -51,7 +48,7 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.cardsContainer.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -59,61 +56,27 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.tableLayoutPanel1);
+            this.panel7.Controls.Add(this.dataGridView1);
             this.panel7.Controls.Add(this.label16);
             this.panel7.Location = new System.Drawing.Point(425, 255);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(407, 202);
             this.panel7.TabIndex = 9;
             // 
-            // tableLayoutPanel1
+            // dataGridView1
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 55.61497F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 44.38503F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel1.Controls.Add(this.transactionDate, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.transactionAmount, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.transactionName, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 29);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.63551F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.36449F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(399, 170);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // transactionDate
-            // 
-            this.transactionDate.Location = new System.Drawing.Point(318, 0);
-            this.transactionDate.Name = "transactionDate";
-            this.transactionDate.Size = new System.Drawing.Size(78, 45);
-            this.transactionDate.TabIndex = 3;
-            this.transactionDate.Text = "04 Jul";
-            this.transactionDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // transactionAmount
-            // 
-            this.transactionAmount.Location = new System.Drawing.Point(178, 0);
-            this.transactionAmount.Name = "transactionAmount";
-            this.transactionAmount.Size = new System.Drawing.Size(78, 45);
-            this.transactionAmount.TabIndex = 2;
-            this.transactionAmount.Text = "-$250";
-            this.transactionAmount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // transactionName
-            // 
-            this.transactionName.Location = new System.Drawing.Point(3, 0);
-            this.transactionName.Name = "transactionName";
-            this.transactionName.Size = new System.Drawing.Size(99, 45);
-            this.transactionName.TabIndex = 1;
-            this.transactionName.Text = "Daraz.pk";
-            this.transactionName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(407, 180);
+            this.dataGridView1.TabIndex = 1;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(5, 11);
+            this.label16.Location = new System.Drawing.Point(5, 4);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 15);
             this.label16.TabIndex = 0;
@@ -223,9 +186,9 @@
             this.label17.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label17.Location = new System.Drawing.Point(6, 14);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 21);
+            this.label17.Size = new System.Drawing.Size(84, 21);
             this.label17.TabIndex = 10;
-            this.label17.Text = "This month";
+            this.label17.Text = "Summary";
             // 
             // lblExpense
             // 
@@ -314,7 +277,7 @@
             this.Load += new System.EventHandler(this.Home_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.cardsContainer.ResumeLayout(false);
@@ -342,11 +305,8 @@
         private Label lblIncome;
         private Label label13;
         private Label label12;
-        private TableLayoutPanel tableLayoutPanel1;
-        private Label transactionDate;
-        private Label transactionAmount;
-        private Label transactionName;
         private Label label16;
         private Label label17;
+        private DataGridView dataGridView1;
     }
 }
