@@ -51,7 +51,7 @@ namespace AtmManagementSystem
                     "values" +
                     "(@date, @purpose, @amount, @user, 'outgoing')", conn);
                 cmd.Parameters.AddWithValue("@date", DateTime.Now);
-                cmd.Parameters.AddWithValue("@purpose", "Bill Payment to" + textBox1.Text);
+                cmd.Parameters.AddWithValue("@purpose", "Bill Payment to " + textBox1.Text);
                 cmd.Parameters.AddWithValue("@amount", textBox2.Text);
                 cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
                 cmd.ExecuteNonQuery();
