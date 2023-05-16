@@ -31,9 +31,9 @@
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.newEmail = new System.Windows.Forms.TextBox();
+            this.prevEmail = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.settingsPanel.SuspendLayout();
@@ -44,9 +44,9 @@
             // 
             this.settingsPanel.Controls.Add(this.button1);
             this.settingsPanel.Controls.Add(this.button3);
-            this.settingsPanel.Controls.Add(this.textBox4);
-            this.settingsPanel.Controls.Add(this.textBox2);
-            this.settingsPanel.Controls.Add(this.textBox1);
+            this.settingsPanel.Controls.Add(this.newEmail);
+            this.settingsPanel.Controls.Add(this.prevEmail);
+            this.settingsPanel.Controls.Add(this.pass);
             this.settingsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.settingsPanel.Location = new System.Drawing.Point(0, 58);
             this.settingsPanel.Name = "settingsPanel";
@@ -81,35 +81,35 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox4
+            // newEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(121, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 23);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.Text = "New Phone";
-            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
-            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
+            this.newEmail.Location = new System.Drawing.Point(121, 133);
+            this.newEmail.Name = "newEmail";
+            this.newEmail.Size = new System.Drawing.Size(200, 23);
+            this.newEmail.TabIndex = 1;
+            this.newEmail.Text = "New Phone";
+            this.newEmail.Enter += new System.EventHandler(this.textBox4_Enter);
+            this.newEmail.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
-            // textBox2
+            // prevEmail
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 63);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Previous Phone";
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            this.prevEmail.Location = new System.Drawing.Point(121, 63);
+            this.prevEmail.Name = "prevEmail";
+            this.prevEmail.Size = new System.Drawing.Size(200, 23);
+            this.prevEmail.TabIndex = 1;
+            this.prevEmail.Text = "Previous Phone";
+            this.prevEmail.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.prevEmail.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
-            // textBox1
+            // pass
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Verification Code";
-            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
-            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
+            this.pass.Location = new System.Drawing.Point(121, 192);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(200, 23);
+            this.pass.TabIndex = 1;
+            this.pass.Text = "Password";
+            this.pass.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.pass.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // panel1
             // 
@@ -151,9 +151,9 @@
         #endregion
 
         private Panel settingsPanel;
-        private TextBox textBox4;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox newEmail;
+        private TextBox prevEmail;
+        private TextBox pass;
         private Panel panel1;
         private Label label1;
         private Button button1;

@@ -1,4 +1,6 @@
-﻿namespace AtmManagementSystem
+﻿using System.Data.SqlClient;
+
+namespace AtmManagementSystem
 {
     public partial class ChangePhone : UserControl
     {
@@ -20,54 +22,101 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                SqlConnection conn = new SqlConnection(Properties.Settings.Default.databasePath);
+                conn.Open();
+
+                //Check current email
+                SqlCommand cmd = new SqlCommand("select Phone from [dbo].[Accounts.tb] " +
+                    "where Username = @user", conn);
+                cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
+                String currentEmail = (String)cmd.ExecuteScalar();
+
+                if (currentEmail != prevEmail.Text)
+                {
+                    MessageBox.Show("Your current Phone didn't match the one on account");
+                    return;
+                }
+                //Check password
+                cmd = new SqlCommand("select Password from [dbo].[Accounts.tb] " +
+                    "where Username = @user", conn);
+                cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
+                String pwd = (String)cmd.ExecuteScalar();
+
+                if (pwd != pass.Text)
+                {
+                    MessageBox.Show("Wrong Password");
+                    return;
+                }
+
+                //change email
+                cmd = new SqlCommand("update [dbo].[Accounts.tb] " +
+                    "Set Phone " +
+                    "= " +
+                    "(@email) where username = @user", conn);
+                cmd.Parameters.AddWithValue("@email", newEmail.Text);
+                cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            MessageBox.Show("Phone Changed Successfully");
+
             this.Parent.Hide();
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Previous Phone")
+            if (prevEmail.Text == "Previous Phone")
             {
-                textBox2.Text = "";
+                prevEmail.Text = "";
             }
         }
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            if (prevEmail.Text == "")
             {
-                textBox2.Text = "Previous Phone";
+                prevEmail.Text = "Previous Phone";
             }
         }
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
-            if (textBox4.Text == "New Phone")
+            if (newEmail.Text == "New Phone")
             {
-                textBox4.Text = "";
+                newEmail.Text = "";
             }
         }
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            if (textBox4.Text == "")
+            if (newEmail.Text == "")
             {
-                textBox4.Text = "New Phone";
+                newEmail.Text = "New Phone";
             }
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Verification Code")
+            if (pass.Text == "Verification Code")
             {
-                textBox1.Text = "";
+                pass.Text = "";
             }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (pass.Text == "")
             {
-                textBox1.Text = "Verification Code";
+                pass.Text = "Verification Code";
             }
         }
     }
