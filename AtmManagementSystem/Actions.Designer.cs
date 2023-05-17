@@ -100,7 +100,7 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = global::AtmManagementSystem.Properties.Resources.request_money_120px;
+            this.button4.Image = global::AtmManagementSystem.Properties.Resources.add_120px;
             this.button4.Location = new System.Drawing.Point(3, 236);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(268, 227);
@@ -115,7 +115,7 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = global::AtmManagementSystem.Properties.Resources.bank_120px1;
+            this.button5.Image = global::AtmManagementSystem.Properties.Resources.mobile_taxi_service_120px;
             this.button5.Location = new System.Drawing.Point(277, 236);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(268, 227);
@@ -129,7 +129,7 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = global::AtmManagementSystem.Properties.Resources.bank_120px1;
+            this.button6.Image = global::AtmManagementSystem.Properties.Resources.ticket_120px;
             this.button6.Location = new System.Drawing.Point(551, 236);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(268, 227);

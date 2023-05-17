@@ -63,6 +63,16 @@ namespace AtmManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_120px {
+            get {
+                object obj = ResourceManager.GetObject("add_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bank_120px {
             get {
                 object obj = ResourceManager.GetObject("bank_120px", resourceCulture);
@@ -183,6 +193,16 @@ namespace AtmManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mobile_taxi_service_120px {
+            get {
+                object obj = ResourceManager.GetObject("mobile_taxi_service_120px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap request_money_120px {
             get {
                 object obj = ResourceManager.GetObject("request_money_120px", resourceCulture);
@@ -206,6 +226,16 @@ namespace AtmManagementSystem.Properties {
         internal static System.Drawing.Bitmap settings_24px {
             get {
                 object obj = ResourceManager.GetObject("settings_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ticket_120px {
+            get {
+                object obj = ResourceManager.GetObject("ticket_120px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
