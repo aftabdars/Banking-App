@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="PrintTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AddMoney.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -20,6 +23,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ChangePhone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="MobilePackages.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">

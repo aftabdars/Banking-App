@@ -120,7 +120,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(268, 227);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Send Money";
+            this.button5.Text = "Mobile Packages";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button5.UseVisualStyleBackColor = true;
@@ -134,10 +134,11 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(268, 227);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Send Money";
+            this.button6.Text = "Print Ticket";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Actions
             // 

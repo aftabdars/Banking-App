@@ -162,3 +162,5 @@ C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\obj\Debug\net6.0-
 C:\Users\raft\Documents\GitHub\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.VisaCard.resources
 C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.AddMoney.resources
+C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.MobilePackages.resources
+C:\Users\Administrator\source\repos\Git\Banking-App\AtmManagementSystem\obj\Debug\net6.0-windows\AtmManagementSystem.PrintTicket.resources

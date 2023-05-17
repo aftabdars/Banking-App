@@ -44,5 +44,12 @@ namespace AtmManagementSystem
             dw.Controls.Add(new AddMoney());
             dw.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new PrintTicket());
+            dw.Show();
+        }
     }
 }
