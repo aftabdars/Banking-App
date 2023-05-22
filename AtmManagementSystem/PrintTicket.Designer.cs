@@ -59,8 +59,10 @@
             this.lblLocation.Location = new System.Drawing.Point(170, 100);
             this.lblLocation.Name = "lblLocation";
             this.lblLocation.Size = new System.Drawing.Size(156, 23);
-            this.lblLocation.TabIndex = 4;
+            this.lblLocation.TabIndex = 3;
             this.lblLocation.Text = "Your Location";
+            this.lblLocation.Enter += new System.EventHandler(this.lblLocation_Enter);
+            this.lblLocation.Leave += new System.EventHandler(this.lblLocation_Leave);
             // 
             // button2
             // 
@@ -71,7 +73,7 @@
             this.button2.Location = new System.Drawing.Point(170, 182);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 35);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -85,7 +87,7 @@
             this.button1.Location = new System.Drawing.Point(171, 141);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 35);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -95,7 +97,7 @@
             this.lblDestination.Location = new System.Drawing.Point(170, 71);
             this.lblDestination.Name = "lblDestination";
             this.lblDestination.Size = new System.Drawing.Size(156, 23);
-            this.lblDestination.TabIndex = 1;
+            this.lblDestination.TabIndex = 2;
             this.lblDestination.Text = "Destination";
             this.lblDestination.Enter += new System.EventHandler(this.textBox4_Enter);
             this.lblDestination.Leave += new System.EventHandler(this.textBox4_Leave);

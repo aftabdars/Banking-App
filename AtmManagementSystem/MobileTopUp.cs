@@ -91,7 +91,7 @@ namespace AtmManagementSystem
 
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (textBox2.Text == "Operator (eg zong)")
+            if (textBox2.Text == "Amount")
             {
                 textBox2.Text = "";
             }
@@ -101,7 +101,7 @@ namespace AtmManagementSystem
         {
             if (textBox2.Text == "")
             {
-                textBox2.Text = "Operator (eg zong)";
+                textBox2.Text = "Amount";
             }
         }
 
@@ -115,9 +115,9 @@ namespace AtmManagementSystem
 
         private void textBox5_Leave(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            if (textBox5.Text == "")
             {
-                textBox1.Text = "PIN Code/Password";
+                textBox5.Text = "PIN Code/Password";
             }
         }
     }

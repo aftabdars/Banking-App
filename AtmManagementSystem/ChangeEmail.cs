@@ -115,7 +115,7 @@ namespace AtmManagementSystem
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (pass.Text == "Verification Code")
+            if (pass.Text == "Password")
             {
                 pass.Text = "";
             }
@@ -125,7 +125,7 @@ namespace AtmManagementSystem
         {
             if (pass.Text == "")
             {
-                pass.Text = "Verification Code";
+                pass.Text = "Password";
             }
         }
     }

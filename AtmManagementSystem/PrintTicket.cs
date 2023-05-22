@@ -116,12 +116,18 @@ namespace AtmManagementSystem
 
         private void textBox4_Enter(object sender, EventArgs e)
         {
-            
+            if (lblDestination.Text == "Destination")
+            {
+                lblDestination.Text = "";
+            }
         }
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            
+            if (lblDestination.Text == "")
+            {
+                lblDestination.Text = "Destination";
+            }
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
@@ -136,12 +142,18 @@ namespace AtmManagementSystem
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            
+            if (lblService.Text == "Service (bus/train/plane)")
+            {
+                lblService.Text = "";
+            }
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            
+            if (lblService.Text == "")
+            {
+                lblService.Text = "Service (bus/train/plane)";
+            }
         }
 
         private void lblYear_Enter(object sender, EventArgs e)
@@ -152,6 +164,22 @@ namespace AtmManagementSystem
         private void lblYear_Leave(object sender, EventArgs e)
         {
             
+        }
+
+        private void lblLocation_Enter(object sender, EventArgs e)
+        {
+            if (lblLocation.Text == "Your Location")
+            {
+                lblLocation.Text = "";
+            }
+        }
+
+        private void lblLocation_Leave(object sender, EventArgs e)
+        {
+            if (lblLocation.Text == "")
+            {
+                lblLocation.Text = "Your Location";
+            }
         }
     }
 }

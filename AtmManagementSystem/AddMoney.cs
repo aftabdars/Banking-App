@@ -66,10 +66,7 @@ namespace AtmManagementSystem
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            if (CVV.Text == "")
-            {
-                CVV.Text = "CVV";
-            }
+
         }
 
         private void textBox2_Enter(object sender, EventArgs e)
@@ -88,19 +85,9 @@ namespace AtmManagementSystem
             }
         }
 
-        private void textBox1_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            
-        }
-
         private void lblYear_Enter(object sender, EventArgs e)
         {
-            if (lblYear.Text == "Card Number")
+            if (lblYear.Text == "2024")
             {
                 lblYear.Text = "";
             }
@@ -108,7 +95,58 @@ namespace AtmManagementSystem
 
         private void lblYear_Leave(object sender, EventArgs e)
         {
-            
+            if (lblYear.Text == "")
+            {
+                lblYear.Text = "2024";
+            }
+        }
+
+        private void lblNumber_Enter(object sender, EventArgs e)
+        {
+            if (lblNumber.Text == "Card Number")
+            {
+                lblNumber.Text = "";
+            }
+        }
+
+        private void lblNumber_Leave(object sender, EventArgs e)
+        {
+            if (lblNumber.Text == "")
+            {
+                lblNumber.Text = "Card Number";
+            }
+        }
+
+        private void lblMonth_Enter(object sender, EventArgs e)
+        {
+            if (lblMonth.Text == "01")
+            {
+                lblMonth.Text = "";
+            }
+        }
+
+        private void lblMonth_Leave(object sender, EventArgs e)
+        {
+            if (lblMonth.Text == "")
+            {
+                lblMonth.Text = "01";
+            }
+        }
+
+        private void lblCVV_Enter(object sender, EventArgs e)
+        {
+            if (CVV.Text == "CVV")
+            {
+                CVV.Text = "";
+            }
+        }
+
+        private void lblCVV_Leave(object sender, EventArgs e)
+        {
+            if (CVV.Text == "")
+            {
+                CVV.Text = "CVV";
+            }
         }
     }
 }

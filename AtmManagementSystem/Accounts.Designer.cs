@@ -56,7 +56,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 71);
-            this.panel1.TabIndex = 3;
+            this.panel1.TabIndex = 12;
             // 
             // button2
             // 
@@ -68,7 +68,7 @@
             this.button2.Location = new System.Drawing.Point(753, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(47, 71);
-            this.button2.TabIndex = 10;
+            this.button2.TabIndex = 11;
             this.button2.Text = "X";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.button2.UseVisualStyleBackColor = true;
@@ -99,7 +99,7 @@
             this.button1.Location = new System.Drawing.Point(437, 354);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(207, 32);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Create an account";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -111,7 +111,7 @@
             this.Occupationtb.MaxLength = 50;
             this.Occupationtb.Name = "Occupationtb";
             this.Occupationtb.Size = new System.Drawing.Size(200, 23);
-            this.Occupationtb.TabIndex = 7;
+            this.Occupationtb.TabIndex = 8;
             this.Occupationtb.Text = "Enter your Occupation";
             this.Occupationtb.Enter += new System.EventHandler(this.Occupationtb_Enter);
             this.Occupationtb.Leave += new System.EventHandler(this.Occupationtb_Leave);
@@ -123,7 +123,7 @@
             this.Usernametb.MaxLength = 50;
             this.Usernametb.Name = "Usernametb";
             this.Usernametb.Size = new System.Drawing.Size(200, 23);
-            this.Usernametb.TabIndex = 5;
+            this.Usernametb.TabIndex = 6;
             this.Usernametb.Text = "Enter your desired Username";
             this.Usernametb.Enter += new System.EventHandler(this.Usernametb_Enter);
             this.Usernametb.Leave += new System.EventHandler(this.Usernametb_Leave);
@@ -135,7 +135,7 @@
             this.Phonetb.MaxLength = 50;
             this.Phonetb.Name = "Phonetb";
             this.Phonetb.Size = new System.Drawing.Size(198, 23);
-            this.Phonetb.TabIndex = 4;
+            this.Phonetb.TabIndex = 5;
             this.Phonetb.Text = "Enter your Phone Number";
             this.Phonetb.Enter += new System.EventHandler(this.Phonetb_Enter);
             this.Phonetb.Leave += new System.EventHandler(this.Phonetb_Leave);
@@ -148,7 +148,7 @@
             this.Addresstb.Multiline = true;
             this.Addresstb.Name = "Addresstb";
             this.Addresstb.Size = new System.Drawing.Size(165, 78);
-            this.Addresstb.TabIndex = 3;
+            this.Addresstb.TabIndex = 4;
             this.Addresstb.Text = "Enter your Address";
             this.Addresstb.Enter += new System.EventHandler(this.Addresstb_Enter);
             this.Addresstb.Leave += new System.EventHandler(this.Addresstb_Leave);
@@ -206,7 +206,7 @@
             this.Passwordtb.MaxLength = 50;
             this.Passwordtb.Name = "Passwordtb";
             this.Passwordtb.Size = new System.Drawing.Size(200, 23);
-            this.Passwordtb.TabIndex = 6;
+            this.Passwordtb.TabIndex = 7;
             this.Passwordtb.Text = "Enter your desired Password";
             this.Passwordtb.Enter += new System.EventHandler(this.Passwordtb_Enter);
             this.Passwordtb.Leave += new System.EventHandler(this.Passwordtb_Leave);
@@ -223,7 +223,7 @@
             this.button3.Location = new System.Drawing.Point(437, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(207, 32);
-            this.button3.TabIndex = 9;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Login";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -235,7 +235,7 @@
             this.emailtb.MaxLength = 50;
             this.emailtb.Name = "emailtb";
             this.emailtb.Size = new System.Drawing.Size(165, 23);
-            this.emailtb.TabIndex = 28;
+            this.emailtb.TabIndex = 3;
             this.emailtb.Text = "Enter your email";
             this.emailtb.Enter += new System.EventHandler(this.textBox1_Enter);
             this.emailtb.Leave += new System.EventHandler(this.textBox1_Leave);

@@ -49,7 +49,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(500, 100);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Mobile Top Up";
+            this.label1.Text = "Mobile TopUp";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -74,7 +74,7 @@
             this.button2.Location = new System.Drawing.Point(171, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 35);
-            this.button2.TabIndex = 3;
+            this.button2.TabIndex = 5;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -88,7 +88,7 @@
             this.button1.Location = new System.Drawing.Point(172, 140);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 35);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -98,7 +98,7 @@
             this.textBox5.Location = new System.Drawing.Point(170, 98);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(156, 23);
-            this.textBox5.TabIndex = 1;
+            this.textBox5.TabIndex = 3;
             this.textBox5.Text = "PIN Code/Password";
             this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter);
             this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
@@ -108,7 +108,7 @@
             this.textBox2.Location = new System.Drawing.Point(170, 71);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(156, 23);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Amount";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);

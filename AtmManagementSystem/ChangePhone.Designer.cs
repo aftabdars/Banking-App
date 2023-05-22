@@ -62,7 +62,7 @@
             this.button1.Location = new System.Drawing.Point(170, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 35);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -76,7 +76,7 @@
             this.button3.Location = new System.Drawing.Point(170, 304);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(102, 35);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 5;
             this.button3.Text = "Cancel";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -86,7 +86,7 @@
             this.newEmail.Location = new System.Drawing.Point(121, 133);
             this.newEmail.Name = "newEmail";
             this.newEmail.Size = new System.Drawing.Size(200, 23);
-            this.newEmail.TabIndex = 1;
+            this.newEmail.TabIndex = 2;
             this.newEmail.Text = "New Phone";
             this.newEmail.Enter += new System.EventHandler(this.textBox4_Enter);
             this.newEmail.Leave += new System.EventHandler(this.textBox4_Leave);
@@ -106,7 +106,7 @@
             this.pass.Location = new System.Drawing.Point(121, 192);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(200, 23);
-            this.pass.TabIndex = 1;
+            this.pass.TabIndex = 3;
             this.pass.Text = "Password";
             this.pass.Enter += new System.EventHandler(this.textBox1_Enter);
             this.pass.Leave += new System.EventHandler(this.textBox1_Leave);

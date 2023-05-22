@@ -51,5 +51,12 @@ namespace AtmManagementSystem
             dw.Controls.Add(new PrintTicket());
             dw.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            DialogWindow dw = new DialogWindow();
+            dw.Controls.Add(new MobilePackages());
+            dw.Show();
+        }
     }
 }

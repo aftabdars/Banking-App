@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MobileTopUp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="PrintTicket.cs">
       <SubType>UserControl</SubType>
     </Compile>
