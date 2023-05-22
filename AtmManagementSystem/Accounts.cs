@@ -18,7 +18,7 @@ namespace AtmManagementSystem
         {
             InitializeComponent();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Haier\source\repos\AtmManagementSystem\Database1.mdf;Integrated Security=True");
+        //SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Haier\source\repos\AtmManagementSystem\Database1.mdf;Integrated Security=True");
 
 
 
@@ -227,7 +227,7 @@ namespace AtmManagementSystem
                 cmd.Parameters.AddWithValue("@add", Addresstb.Text);
                 cmd.Parameters.AddWithValue("@phone", Phonetb.Text);
                 cmd.Parameters.AddWithValue("@user", Usernametb.Text);
-                cmd.Parameters.AddWithValue("@pwd", Passwordtb.Text);
+                cmd.Parameters.AddWithValue("@pwd", Encryption.Encrypt(Passwordtb.Text,69));
                 cmd.Parameters.AddWithValue("@occ", Occupationtb.Text);
                 cmd.ExecuteNonQuery();
                 conn.Close();

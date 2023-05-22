@@ -33,7 +33,7 @@ namespace AtmManagementSystem
                 cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
                 String currentEmail = (String)cmd.ExecuteScalar();
 
-                if (currentEmail != prevEmail.Text)
+                if (Encryption.Decrypt(currentEmail, 69) != prevEmail.Text)
                 {
                     MessageBox.Show("Your current Password didn't match the one on account");
                     return;
@@ -55,7 +55,7 @@ namespace AtmManagementSystem
                     "Set Password " +
                     "= " +
                     "(@email) where username = @user", conn);
-                cmd.Parameters.AddWithValue("@email", newEmail.Text);
+                cmd.Parameters.AddWithValue("@email", Encryption.Encrypt(newEmail.Text,69));
                 cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);
                 cmd.ExecuteNonQuery();
 

@@ -68,8 +68,13 @@ namespace AtmManagementSystem
                 MessageBox.Show(ex.Message);
                 return;
             }
-            
-            if(password != textBox1.Text)
+            if(String.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Username Incorrect!");
+                return;
+            }
+
+            if(password != Encryption.Decrypt(textBox1.Text,69))
             {
                 MessageBox.Show("Password Incorrect!");
                 return;
