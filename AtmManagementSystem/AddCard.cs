@@ -32,7 +32,7 @@ namespace AtmManagementSystem
                     "values " +
                     "(@name, @number, @expiry, @cvv, @user)", conn);
                 cmd.Parameters.AddWithValue("@name", textBox4.Text);
-                cmd.Parameters.AddWithValue("@number", textBox1.Text);
+                cmd.Parameters.AddWithValue("@number", Encryption.Encrypt(textBox1.Text, 69));
                 cmd.Parameters.AddWithValue("@expiry", dateTimePicker1.Value);
                 cmd.Parameters.AddWithValue("@cvv", textBox2.Text);
                 cmd.Parameters.AddWithValue("@user", Properties.Settings.Default.currentUser);

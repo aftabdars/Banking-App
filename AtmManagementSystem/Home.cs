@@ -79,7 +79,9 @@ namespace AtmManagementSystem
                 //generate card component
                 VisaCard card = new();
                 card.lblName.Text = row["Name"].ToString();
-                string cardNumber = System.Text.RegularExpressions.Regex.Replace(row["CardNumber"].ToString(), ".{4}", "$0 ");
+                string cardnumenc = row["CardNumber"].ToString();
+                cardnumenc = Encryption.Decrypt(cardnumenc,69);
+                string cardNumber = System.Text.RegularExpressions.Regex.Replace(cardnumenc, ".{4}", "$0 ");
                 card.lblNumber.Text = cardNumber;
                 DateTime expiryDate = (DateTime)row["Expiry"];
                 card.lblExpiry.Text = expiryDate.ToString("MM/yyyy");
